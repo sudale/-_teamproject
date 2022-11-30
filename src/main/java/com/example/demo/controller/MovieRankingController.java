@@ -76,10 +76,10 @@ public class MovieRankingController {
 //				 String like = likes.get(i).text();
 				 int seq = i;
 //				 CGVInfoDto cgvInfoDto = new CGVInfoDto(rank, img, movieAge, movieTitle, movieRate, movieOpenDate, like, seq);
-				 MovieRankingInfoDto cgvInfoDto = new MovieRankingInfoDto(rank, img, movieAge, movieTitle, movieRate, movieOpenDate, seq);
+				 MovieRankingInfoDto MovieRankingInfoDto = new MovieRankingInfoDto(rank, img, movieAge, movieTitle, movieRate, movieOpenDate, seq);
 				 
-				 logger.info(cgvInfoDto.toString());
-				 list.add(cgvInfoDto);
+				 logger.info(MovieRankingInfoDto.toString());
+				 list.add(MovieRankingInfoDto);
 			 }
 			 	gson = new Gson().toJson(list);
 			 

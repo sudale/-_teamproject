@@ -8,7 +8,7 @@ public class MovieRankingInfoDto {
 	String movieTitle;
 	String movieRate; //예매율
 	String movieOpenDate; //개봉일
-	String like;
+	//String like;
 	int seq;
 	
 	public MovieRankingInfoDto() {
@@ -63,16 +63,9 @@ public class MovieRankingInfoDto {
 		this.movieOpenDate = movieOpenDate;
 	}
 
-	public String getLike() {
-		return like;
-	}
 
-	public void setLike(String like) {
-		this.like = like;
-	}
 
 	public MovieRankingInfoDto(String rank, String img, String movieAge, String movieTitle, String movieRate,
-//			String movieOpenDate, String like, int seq) {
 			String movieOpenDate , int seq) {
 		super();
 		this.rank = rank;
